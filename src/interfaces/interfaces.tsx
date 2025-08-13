@@ -10,6 +10,7 @@ export interface InputInterface{
   name?: string;
   error?: any;
   label: string;
+  required?: true
 }
 export interface ButtonInterface {
   type: "submit" | "button" | undefined;

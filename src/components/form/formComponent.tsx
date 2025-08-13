@@ -73,22 +73,9 @@ export default function FormComponent() {
           </option>
           <option value="checkup">{servicesDentalLoc.checkup}</option>
         </select>
-
-        <select
-          name="doctorName"
-          id="doctorName"
-          defaultValue="default"
-          className="h-8 px-2 py-1 border shadow-lg rounded-lg focus:outline-none "
-        >
-          <option value="default" disabled>
-            {doctorNameLoc.default}
-          </option>
-          <option value="firstDr">{doctorNameLoc.dr1}</option>
-          <option value="secondDr">{doctorNameLoc.dr2}</option>
-          <option value="thirdDr">{doctorNameLoc.dr3}</option>
-        </select>
-        <div></div>
-        <div></div>
+        <textarea name="" id="" className="h-20 px-2 py-1 border shadow-lg rounded-lg focus:outline-none" placeholder='توضیحات'/>
+        <Input type={'radio'} name="hasPreviousVisit" value="yes" required placeholder={''} className={''} label={'مراجعه قبلی داشتم'}/>
+        <Input type={'radio'} name="hasPreviousVisit" value="no" required placeholder={''} className={''} label={'مراجعه قبلی نداشتم'}/>
         <Buttons
           type={'submit'}
           className={
