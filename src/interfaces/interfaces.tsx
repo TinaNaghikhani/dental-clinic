@@ -19,3 +19,9 @@ export interface ButtonInterface {
   label:ReactNode
   disable: boolean;
 }
+export interface DeleteModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onConfirm: () => void;
+  itemName?: string; // اختیاری — اگر ندادیم، مقدار پیش‌فرض "آیتم" استفاده میشه
+}
